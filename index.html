@@ -1,0 +1,16 @@
+<head>
+  <meta charset="UTF-8">
+  <title>الدعوة</title>
+  <script>
+    const name = new URLSearchParams(window.location.search).get("name");
+    if (name) {
+      const encoded = encodeURIComponent(name);
+     window.location.href = "https://script.google.com/macros/s/AKfycbyFb_j9KeAkaLpDewOcYfOaDDcgcP0jVA3oP2yLyVRzcf6x-hScWBTs_VDsD2nKlgz0tw/exec?token=" + encoded;
+    } else {
+      document.body.innerText = "لا يوجد اسم بالرابط!";
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
